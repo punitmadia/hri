@@ -1,203 +1,264 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <title>Hello, world!</title>
-    <style>
-        body {
-            background-color: #f6f6f6;
-        }
-        .nav-link {
-            color: #d9d3d2;
-            opacity: 0.6;
-        }
-        .nav-link:hover {
-            opacity: 1;
-        }
-        .bgcolor {
-            background-color: black;
-            opacity: 0.7;
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Midterm Assignment</title>
+        <style>
+            header {
+                background-color: black;
+                background-size: cover;
+            }
+            header li a:hover {
+                background-color: #a3a199;
+            }
+            .tabs .tab a:focus, .tabs .tab a:focus.active {
+            background-color: transparent;
+            }
+            @media screen and (max-width: 670px){
+                
+                .right-small {
+                    text-align: left;
+                }
+                .xyz {
+                    padding: 0 4px;
+                }
+
+            }
+            section {
+                background-image: url("https://www.pxwall.com/wp-content/uploads/2018/03/4K-Ultra-HD-Desktop-Wallpapers.jpg");
+                background-size: cover;
+                min-height: 750px;
+            }
+           
+
+            .xyz {
+            padding: 0 4px;
+            font-size: medium;
             color: blanchedalmond;
-        }
-        .bgcolor:hover {
-            opacity: 1;
-        }
-        .calling {
-            color: black;
-            text-decoration: none;
-        }
-        p {
-            line-height: 2em;
-        }
-        .span1{
-            background-color: #110b0b;
-            padding: 8px 20px;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            word-spacing: 0.4em;
-            letter-spacing: 8px;
-        }
-        .website {
-            margin: 64px auto;
-        }
-        .text {
-            color: #706f6f;
-        }
-        .text1 {
-            font-size: 15px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .jus {
-            text-align: justify;
-            color: black;
-            opacity: 0.6;
-        }
-        .coloring {
-            opacity: 0.6;
-        }
-        .padd {
-            padding-left: 40px;
-        }
-        img {
-            opacity: 0.6;
-            border-radius: 10px;
-        }
-        img:hover {
-            opacity: 1;
-        }
-        .spacing {
-            letter-spacing: 8px;
-        }
-        .margin {
-            margin-left: 240px;
-        }
-        .jus1 {
-            color: black;
-        }
-        .jus1:hover {
-            text-decoration: none;
-        }
-        .light-grey {
-            background-color: lightgray;
-        }
-        .dark-grey {
-            background-color: darkgray;
-        }
-        span .span2 {
-            padding: 0;
-        } 
-        .span2 a {
-            color: blanchedalmond;
-        }
-        .span2 a:hover {
-            text-decoration: none;
-        }  
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-dark bg-dark" id="home">
-        <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#mN">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mN">
-                <div class="navbar-nav float-left text-left pr-3">
-                  <a class="nav-item nav-link active  text-white" href=""><i class="fa fa-fw fa-home"></i>Home</a>
-                  <a class="nav-item nav-link  text-white" href="#about"><i class="fa fa-fw fa-user"></i>About</a>
-                  <a class="nav-item nav-link  text-white" href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-                  <a class="nav-item nav-link  text-white" href=""><i class="fa fa-fw fa-search"></i>Search</a>
+            }
+            .xyz :hover {
+                color: crimson;
+            }
+            span .span2 {
+                padding: 0;
+            } 
+            .span2 a {
+                color: blanchedalmond;
+            }
+            .span2 a:hover {
+                text-decoration: none;
+            } 
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="home1">
+            <nav class="nav-wrapper transparent">
+                <div class="container">
+                    <a href="#" data-target="mobile" class="sidenav-trigger">
+                        <i class="material-icons hide-on-med-and-up">menu</i>
+                    </a>
+                    <ul class="right hide-on-small-only">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="sidenav grey lighten-2" id="mobile">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </nav>
-        <div class="container"><br><br><br>
-            <h3 class="dispaly-5 text-center website"><span class="span1">MY WEBSITE</span></h3><br><br><br><br><br><br><br><br><br>
-            <div class="text-center">
-                <h3 class="text" id="about">About Me</h3><br>
-                <h5 class="text1">Don't read the paragraph</h5><br>
-                <p class="jus">A strong personality and a successful general, Akbar gradually enlarged the Mughal Empire to include much of the Indian subcontinent. His power and influence, however, extended over the entire subcontinent because of Mughal military, political, cultural, and economic dominance. To unify the vast Mughal state, Akbar established a centralised system of administration throughout his empire and adopted a policy of conciliating conquered rulers through marriage and diplomacy. To preserve peace and order in a religiously and culturally diverse empire, he adopted policies that won him the support of his non-Muslim subjects.  Eschewing tribal bonds and Islamic state identity, Akbar strove to unite far-flung lands of his realm through loyalty, expressed through an Indo-Persian culture, to himself as an emperor.</p>
-                <br><br>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="padd">
-                        <i class="fa fa-fw fa-user coloring"></i><p class="coloring" style="white-space: nowrap; display: inline-block;">Punit Madia</p><br>
-                    </div>
-                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQETS7OBQAG2uQ/profile-displayphoto-shrink_200_200/0?e=1597276800&v=beta&t=-YV7nKvSs9DvmmY_hI-IFl7ZRaWNCBtQYM0x6yobra0" class="c"><br><br>
-                    
-                </div>
-                <div class="col-md-6">
-                    <p class="jus">Mughal India developed a strong and stable economy, leading to commercial expansion and greater patronage of culture. Akbar himself was a patron of art and culture. He was fond of literature, and created a library of over 24,000 volumes written in Sanskrit, Urdu, Persian, Greek, Latin, Arabic and Kashmiri, staffed by many scholars, translators, artists, calligraphers, scribes, bookbinders and readers. He did much of the cataloging himself through three main groupings.</p>
-                </div>
-            </div>
-        </div><br><br><br><br><br><br><br><br>
-
-        <div class="container">
-            <h3 class="display-5 text-center text">I'm really good at:</h3><br>
-            <p class="spacing"><i class="fa fa-fw fa-bed">Sleep</i></p>
-            <div class="light-grey">
-                <div class="text-center dark-grey" style="width: 90%;">90%</div>
-            </div><br>
-            <p class="spacing"><i class="fa fa-fw fa-futbol-o">Sports</i></p>
-            <div class="light-grey">
-                <div class="text-center dark-grey" style="width: 85%;">85%</div>
-            </div><br>
-            <p class="spacing"><i class="fa fa-fw fa-bicycle">Cycling</i></p>
-            <div class="light-grey">
-                <div class="text-center dark-grey" style="width: 80%;">80%</div>
-            </div><br>
-        </div><br><br><br><br><br><br><br><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mumbai_skyline_BWSL.jpg/250px-Mumbai_skyline_BWSL.jpg" class="c"><br><br>
-                </div>
-
-                <div class="col-md-6">
-                    <h3 class="display-5 text">Some of my details</h3><br>
-                        <div class="jus justify-content-center">
-                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Mumbai, India<br>
-                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a class="jus1" href="tel:0123456789"> Phone: 0123456789</a><br>
-                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a class="jus1" href="mailto:punitmadia28@gmail.com"> Email: punitmadia28@gmail.com</a><br>
-                        </div>
-                        <br>
-                </div>
-            </div>
-        </div>
-
-
-
-    <footer class="page-footer font-small blue bgcolor" id="contact">
-
-        <h3 class="display-5 text-center py-5" id="contact">Contact Me</h3>
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <br><br>
-            <span class="span2"><a href="#home"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a></span><br>
-            <br>
-            <nav class="justify-content-center nav">
-                <a class="nav-link nav-item" href="https://www.instagram.com/punit_2802/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-                <a class="nav-link nav-item" href="https://www.facebook.com/punit.madia/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-                <a class="nav-link nav-item" href="https://www.linkedin.com/in/punit-madia-099b521a9/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-                <a class="nav-link nav-item" href="https://twitter.com/MadiaPunit"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-                <a class="nav-link nav-item" href="snap.html"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
             </nav>
-        </div>
-        
-      
-    </footer>
-    
+        </header>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+        <section class="image-1"></section>
+
+
+        <!-- Content -->
+        <div class="container section" id="home">
+            <div class="row">
+                <div class="col s12 m4">
+                    <br><br>
+                    <img src="sc/phy.jpg" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 m6 offset-m2">
+                    <h2 class="orange-text text-lighten-2">Physics</h2>
+                    <p>Physics is the natural science that studies matter, its motion and behavior through space and time, and the related entities of energy and force. Physics is one of the most fundamental scientific disciplines, and its main goal is to understand how the universe behaves.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4 push-m7">
+                    <br><br>
+                    <img src="sc/chem.png" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 m6 pull-m5 right-align right-small">
+                    <h2 class="green-text text-lighten-2">Chemistry</h2>
+                    <p>Chemistry is the scientific discipline involved with elements and compounds composed of atoms, molecules and ions: their composition, structure, properties, behavior and the changes they undergo during a reaction with other substances.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <br><br>
+                    <img src="sc/math.jpg" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 m6 offset-m2">
+                    <h2 class="indigo-text text-lighten-2">Maths</h2>
+                    <p>Mathematics includes the study of such topics as quantity (number theory), structure (algebra), space (geometry), and change (mathematical analysis). It has no generally accepted definition.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--parallax -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="https://images.unsplash.com/photo-1538384823779-80c3e445d1a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" class="responsive-img">
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="container section" id="about">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h2 class="indigo-text text-darken-4">Want to apply for</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col s12 m6 offset-m2">
+                    <ul class="tabs">
+                        <li class="tab col s6">
+                            <a href="#sleep" class="indigo-text text-darken-2">JEE ADVANCED</i></a>
+                        </li>
+                        <li class="tab col s6">
+                            <a href="#cycle" class="indigo-text text-darken-2">JEE MAINS</a>
+                        </li>
+                    </ul>
+                    <div class="col s12" id="sleep">
+                        <p>Joint Entrance Examination – Advanced (JEE-Advanced), formerly the Indian Institutes of Technology-Joint Entrance Examination (IIT-JEE), is an academic examination held annually in India. It is conducted by one of the seven zonal IITs (IIT Roorkee, IIT Kharagpur, IIT Delhi, IIT Kanpur, IIT Bombay, IIT Madras, and IIT Guwahati) under the guidance of the Joint Admission Board (JAB). </p>
+                    </div>
+                    <div class="col s12" id="cycle">
+                        <p>JEE Main has two papers, Paper-1 and Paper-2. Candidates may opt for either or both of them. Both papers contain multiple choice questions. Paper 1 is for admission to B.E./B.Tech courses and is conducted only online. Paper-2 is for admission in B.Arch and B.Planning courses and is conducted offline only. From January 2020 an additional Paper - 3 is being introduced for B.Planning courses separately.[</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parallax -->
+
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="https://images.wallpaperscraft.com/image/silhouette_landscape_art_144101_3840x3840.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="container section" id="contact">
+            <div class="row">
+                <div class="col s12 m5">
+                    <h2 class="red-text text-lighten-3">Contact Form</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col s12 m5 offset-m2">
+                    <form>
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <div class="input-field">
+                            <p>Admission for...</p>
+                            <p>
+                                <label>
+                                    <input type="checkbox"><span>JEE ADVANCED</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox"><span>JEE MAINS</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="inut-field center">
+                            <button class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        
+    
+    <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript">
+        new JotformFeedback({
+          formId: "202030762396047",
+          buttonText: "Feedback",
+          base: "https://form.jotform.com/",
+          background: "#F59202",
+          fontColor: "#FFFFFF",
+          buttonSide: "left",
+          buttonAlign: "center",
+          type: false,
+          width: 700,
+          height: 500,
+          isCardForm: false
+        });
+      </script>
+
+
+        <!-- Footer -->
+        <footer class="grey darken-3 white-text page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5>About Me</h5><br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="col s12 m4 offset-m2">
+                        <h5 class="">Connect</h5>
+                        <p class="nav">
+                            <a class="nav-link nav-item xyz" href="https://www.instagram.com/punit_2802/"><i class="fa fa-instagram"> </i></a>
+                            <a class="nav-link nav-item xyz" href="https://www.facebook.com/punit.madia/"><i class="fa fa-facebook-official"> </i></a>
+                            <a class="nav-link nav-item xyz" href="https://www.linkedin.com/in/punit-madia-099b521a9/"><i class="fa fa-linkedin"> </i></a>
+                            <a class="nav-link nav-item xyz" href="https://twitter.com/MadiaPunit"><i class="fa fa-twitter"> </i></a>
+                            <a class="nav-link nav-item xyz" href="#"><i class="fa fa-snapchat"> </i></a>
+                        </p>
+                        <span class="span2"><a href="#home1"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a></span><br>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright grey darken-4">
+                <div class="container center">&copy; Punit Madia</div>
+            </div>
+        </footer>
+
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+           $(document).ready(function(){
+
+                $('.sidenav').sidenav();
+                $('.materialboxed').materialbox();
+                $('.parallax').parallax();
+                $('.tabs').tabs();
+            });
+        </script>
+    </body>
 </html>
